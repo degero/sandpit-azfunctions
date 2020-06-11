@@ -1,0 +1,3 @@
+# Create function app and storage account - replace <your-xxx with required values
+az storage account create --resource-group "<your-resource-group>" --name "<your-storage-name>" --kind storageV2 --location <target-az-region>
+az functionapp create --resource-group "<your-resource-group>" --name "<your-func-app-name>" --storage-account "<your-storage-name>" --runtime dotnet --consumption-plan-location  <target-az-region>
